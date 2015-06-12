@@ -21,7 +21,7 @@ function doTheThing() {
 	// - Decrease Cooldowns if another player used a long-cooldown ability < 10 seconds ago
 	
 	// TODO purchase abilities and upgrades intelligently
-	
+	useEVERYTHINGIfEnabled();
 	attemptRespawn();
 	
 	isAlreadyRunning = false;
@@ -109,6 +109,64 @@ function useMedicsIfRelevant() {
 		}
 	}
 }
+function useEVERYTHINGIfEnabled() {
+		if (document.getElementById('ability_1')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_1').childElements()[0]);
+		}
+		if (document.getElementById('ability_2')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_2').childElements()[0]);
+		}
+		if (document.getElementById('ability_3')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_3').childElements()[0]);
+		}
+		if (document.getElementById('ability_4')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_4').childElements()[0]);
+		}
+		if (document.getElementById('ability_5')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_5').childElements()[0]);
+		}
+		if (document.getElementById('ability_6')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_6').childElements()[0]);
+		}
+		if (document.getElementById('ability_8')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_8').childElements()[0]);
+		}
+		if (document.getElementById('ability_9')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_9').childElements()[0]);
+		}
+		if (document.getElementById('ability_10')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_10').childElements()[0]);
+		}
+		if (document.getElementById('ability_11')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_11').childElements()[0]);
+		}
+		if (document.getElementById('ability_12')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_12').childElements()[0]);
+		}
+		if (document.getElementById('ability_13')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_13').childElements()[0]);
+		}
+		if (document.getElementById('ability_14')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_14').childElements()[0]);
+		}
+		if (document.getElementById('ability_15')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_15').childElements()[0]);
+		}
+		if (document.getElementById('ability_16')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_16').childElements()[0]);
+		}
+		if (document.getElementById('ability_17')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_17').childElements()[0]);
+		}
+		if (document.getElementById('ability_18')) {
+			g_Minigame.CurrentScene().TryAbility(document.getElementById('ability_18').childElements()[0]);
+		}
+
+
+	
+}
+
+
 
 //If player is dead, call respawn method
 function attemptRespawn() {
